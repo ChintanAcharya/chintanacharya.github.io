@@ -2,7 +2,8 @@ name: Build site and publish to GH Pages
 
 on:
   push:
-    branches: [master]
+    branches:
+      - master
 
 
 jobs:
