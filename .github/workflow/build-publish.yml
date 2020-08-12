@@ -1,0 +1,35 @@
+name: Build site and publish to GH Pages
+
+on:
+  push:
+    branches: [master]
+
+
+jobs:
+  deploy:
+    name: Deploy to GH Pages
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Use Node.js 14
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run build
+        env:
+          CI: true
+
+      - name: Push site to build branch
+        uses: s0/git-publish-subdir-action@v2
+        env:
+          REPO: self
+          BRANCH: gh-pages
+          FOLDER: _site
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
