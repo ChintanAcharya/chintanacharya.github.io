@@ -1,0 +1,8 @@
+# Generated site
+_site
+
+# Editor stuff
+.idea
+
+# node_modules
+node_modules
