@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto Mono", sans-serif;
+    background-color: #EEE;
+    max-width: 1024px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+}
+
+.left, .right {
+    padding: 1rem;
+}
+
+.left {
+    padding-top: 2.5rem;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.left aside {
+    display: flex;
+    justify-content: center;
+}
+
+.left aside img {
+    border-radius: 5%;
+    max-width: 100%;
+    width: 12rem;
+}
+
+@media screen and (min-width: 767px) {
+    main {
+        flex-wrap: nowrap;
+    }
+    .left {
+        width: unset;
+    }
+}
