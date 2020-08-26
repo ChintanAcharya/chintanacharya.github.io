@@ -1,0 +1,25 @@
+body {
+    background-color: #EEE;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+main {
+    display: flex;
+}
+
+.left, .right {
+    padding: 1rem;
+}
+
+.left {
+    padding-top: 2rem;
+}
+
+.left aside {
+    max-width: 360px;
+}
+
+.left aside img {
+    max-width: 100%;
+}
