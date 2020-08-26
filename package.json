@@ -4,7 +4,7 @@
   "description": "Chintan Acharya's personal website",
   "scripts": {
     "build": "npx @11ty/eleventy",
-    "dev": "DEBUG=Eleventy* npx @11ty/eleventy"
+    "dev": "DEBUG=Eleventy* npx @11ty/eleventy --watch --serve"
   },
   "keywords": [
     "Chintan",
