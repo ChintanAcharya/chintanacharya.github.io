@@ -3,7 +3,7 @@
 }
 
 body {
-    font-family: "Roboto Mono", sans-serif;
+    font-family: monospace, sans-serif;
     background-color: #EEE;
     max-width: 1024px;
     margin: 0 auto;
