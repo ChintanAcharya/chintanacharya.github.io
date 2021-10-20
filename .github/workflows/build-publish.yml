@@ -28,7 +28,7 @@ jobs:
           CI: true
 
       - name: Push site to build branch
-        uses: s0/git-publish-subdir-action@v2.3.0
+        uses: s0/git-publish-subdir-action@5a288cc31229bdad4c7e58bde61304657a7d6dbf
         env:
           REPO: self
           BRANCH: gh-pages
