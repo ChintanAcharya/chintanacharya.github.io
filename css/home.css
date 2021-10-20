@@ -21,7 +21,7 @@ h2 {
     margin-top: 2.5rem;
 }
 
-.left, .right {
+.right {
     padding: 1rem;
 }
 
@@ -39,5 +39,5 @@ h2 {
 .left aside img {
     border-radius: 5%;
     max-width: 100%;
-    width: 12rem;
+    width: 8rem;
 }
