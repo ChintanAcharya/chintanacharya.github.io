@@ -3,7 +3,7 @@
 }
 
 body {
-    font-family: "Roboto Mono", sans-serif;
+    font-family: monospace, sans-serif;
     background-color: #EEE;
     max-width: 1024px;
     margin: 0 auto;
@@ -14,9 +14,14 @@ main {
     display: flex;
     flex-wrap: wrap;
     padding: 0 1rem;
+    margin-bottom: 2rem;
 }
 
-.left, .right {
+h2 {
+    margin-top: 2.5rem;
+}
+
+.right {
     padding: 1rem;
 }
 
@@ -34,14 +39,5 @@ main {
 .left aside img {
     border-radius: 5%;
     max-width: 100%;
-    width: 12rem;
-}
-
-@media screen and (min-width: 767px) {
-    main {
-        flex-wrap: nowrap;
-    }
-    .left {
-        width: unset;
-    }
+    width: 10rem;
 }
