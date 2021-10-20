@@ -17,6 +17,10 @@ main {
     margin-bottom: 2rem;
 }
 
+h2 {
+    margin-top: 2.5rem;
+}
+
 .left, .right {
     padding: 1rem;
 }
