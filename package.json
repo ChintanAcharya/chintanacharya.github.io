@@ -7,8 +7,8 @@
     "dev": "DEBUG=Eleventy* npx @11ty/eleventy --watch --serve"
   },
   "engines": {
-    "node": "^14.17.4",
-    "npm": "^7.21.1"
+    "node": "^24",
+    "npm": "^11"
   },
   "keywords": [
     "Chintan",
