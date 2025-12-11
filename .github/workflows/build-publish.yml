@@ -12,15 +12,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v6
 
-      - name: Use Node.js 14
-        uses: actions/setup-node@v1
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
         with:
-          node-version: 14
+          node-version-file: .nvmrc
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Build
         run: npm run build
@@ -28,7 +28,7 @@ jobs:
           CI: true
 
       - name: Push site to build branch
-        uses: s0/git-publish-subdir-action@5a288cc31229bdad4c7e58bde61304657a7d6dbf
+        uses: s0/git-publish-subdir-action@92faf786f11dfa44fc366ac3eb274d193ca1af7e
         env:
           REPO: self
           BRANCH: gh-pages
