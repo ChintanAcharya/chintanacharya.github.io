@@ -16,7 +16,7 @@
     "website",
     "chintanacharya"
   ],
-  "author": "Chintan",
+  "author": "Chintan <contact@chintanacharya.dev>",
   "license": "MIT",
   "devDependencies": {
     "@11ty/eleventy": "3.1.2"
