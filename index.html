@@ -1,137 +1,282 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="utf-8"/>
-    <link rel="shortcut icon" href="/img/favicon.png"> <!-- TODO -->
-    <link rel="icon" href="/img/favicon.png"> <!-- TODO -->
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="/img/favicon.png" />
+    <!-- TODO -->
+    <link rel="icon" href="/img/favicon.png" />
+    <!-- TODO -->
 
     <title>Chintan's Website</title>
 
     <!-- SEO Tags -->
-    <meta name="description" content="Chintan's Website."/>
-    <meta name="keywords" content="chintan, acharya, chintan acharya"/>
-    <meta name="author" content="Chintan"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#EEEEEE">
+    <meta name="description" content="Chintan's Website." />
+    <meta name="keywords" content="chintan, acharya, chintan acharya" />
+    <meta name="author" content="Chintan" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#EEEEEE" />
 
     <!-- Styles -->
     <style>
-        * {
-            box-sizing: border-box;
-        }
+      * {
+        box-sizing: border-box;
+      }
 
-        body {
-            font-family: monospace, sans-serif;
-            background-color: #EEE;
-            max-width: 1024px;
-            margin: 0 auto;
-            width: 100%;
-            line-height: 1.5;
+      /* Color pallette */
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --color-text: #cecdc3;
+          --color-text-light: #878580;
+          --color-highlight: #3aa99f;
+          --color-highlight-light: #24837b;
+          --color-bg: #1c1b1a;
         }
+      }
 
-        main {
-            display: flex;
-            flex-wrap: wrap;
-            padding: 0 1rem;
-            margin-bottom: 2rem;
+      @media (prefers-color-scheme: light) {
+        :root {
+          --color-text: #100f0f;
+          --color-text-light: #6f6e69;
+          --color-highlight: #24837b;
+          --color-highlight-light: #5abdac;
+          --color-bg: #f2f0e5;
         }
+      }
 
-        h2 {
-            margin-top: 2.5rem;
-        }
+      body {
+        font-family:
+          -apple-system,
+          BlinkMacSystemFont,
+          avenir next,
+          avenir,
+          segoe ui,
+          helvetica neue,
+          Adwaita Sans,
+          Cantarell,
+          Ubuntu,
+          roboto,
+          noto,
+          helvetica,
+          arial,
+          sans-serif;
+        color: var(--color-text);
+        background-color: var(--color-bg);
+        max-width: 1024px;
+        margin: 0 auto;
+        padding: 1rem;
+        width: 100%;
+        min-height: 100dvh;
+        padding-top: 64px;
+        line-height: 1.5;
+        display: flex;
+        flex-direction: column;
+      }
 
-        .right {
-            padding: 1rem;
-        }
+      main {
+        flex-grow: 1;
+      }
 
-        .left {
-            padding-top: 2.5rem;
-            width: 100%;
-            flex-shrink: 0;
-        }
+      a:link,
+      a:visited,
+      a:hover,
+      a:active {
+        text-decoration: none;
+      }
 
-        .left aside {
-            display: flex;
-            justify-content: center;
-        }
+      a {
+        color: var(--color-highlight);
+        border-bottom: 2px solid var(--color-highlight);
+        padding-bottom: 1px;
+      }
+      main {
+        display: flex;
+        flex-wrap: wrap;
+      }
 
-        .left aside img {
-            border-radius: 5%;
-            max-width: 100%;
-            width: 10rem;
-            height: 10rem;
-        }
+      h1,
+      h2 {
+        font-weight: 500;
+        margin-top: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        margin: 0.5rem 0;
+      }
+
+      ul {
+        margin: 0;
+        padding-left: 24px;
+      }
+
+      li {
+        margin: 0.5rem 0;
+      }
+
+      aside {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+      }
+
+      footer {
+        margin-top: 8px;
+        padding: 8px 0;
+        text-align: center;
+        color: var(--color-text-light);
+      }
     </style>
-</head>
-<body>
-<main>
-    <div class="left">
-        <aside>
-            <img width="460" height="460" src="/img/chintan.jpg" alt="">
-        </aside>
-    </div>
-    <div class="right">
+  </head>
+  <body>
+    <aside>
+      <a
+        href="https://github.com/ChintanAcharya"
+        target="_blank"
+        rel="noopener"
+      >
+        GitHub
+      </a>
+      <a
+        href="https://www.linkedin.com/in/chintanacharya96/"
+        target="_blank"
+        rel="noopener"
+        >LinkedIn</a
+      >
+    </aside>
+    <main>
+      <div class="right">
         <section class="intro">
-            <h2>Hi! I'm Chintan, a Web Developer.</h2>
-            <p>I enjoy building consumer and developer-facing products. While my job title says "Frontend Engineer", I
-                like working on all the parts of the stack.</p>
-            <p>I love exploring programming languages, especially the ones which provide safety (type, memory,
-                exception) and reliability. I previously wrote some Elm, Haskell, Dart and Ruby, and I'm learning Rust
-                now.</p>
-            <p>I recently discovered my interest in platform engineering, and I'm looking for pro-bono (and preferably
-                open source) DevOps consulting opportunities in order to help me grow.</p>
-            <p>I occasionally play video games, Chess and the Piano.</p>
+          <h1>Hi! I'm Chintan</h1>
+          <p>
+            I'm a software engineer specializing in product engineering and
+            frontend infrastructure. I enjoy building developer tools, and
+            end-user experiences alike. I am motivated by real-world impact and
+            value beyond just business metrics.
+          </p>
+          <p>
+            I like to solve complex technical challenges that span multiple
+            domains. I don't mind getting my hands dirty with any part of the
+            stack. In addition to frontend engineering, I've previously dabbled
+            with mobile development, backend, CI/CD, bundlers, testing
+            frameworks, and more, to solve problems at my previous roles.
+          </p>
         </section>
         <section class="work">
-            <h2>Work</h2>
-            <article class="work-apollo">
-                <h3>Senior Frontend Engineer (Current) at <a href="https://apollo.io" target="_blank" rel="noopener">Apollo.io
-                    (YC W16)</a></h3>
-                <p>// TODO</p>
-            </article>
-            <article class="work-cbh">
-                <h3>Senior Software Engineer at <a href="https://clipboardhealth.com" target="_blank" rel="noopener">Clipboard
-                    Health (YC W17)</a></h3>
-                <p>Built the MVP for a job board for healthcare professionals using Next.js, TailwindCSS and Typescript.</p>
-            </article>
-            <article class="work-razorpay">
-                <h3>Frontend Engineer, Payments at <a href="https://razorpay.com" target="_blank" rel="noopener">Razorpay
-                    (YC W15)</a></h3>
-                <ul>
-                    <li>Built a localization framework within Razorpay Checkout to support multiple languages.</li>
-                    <li>Migrated major parts of Razorpay Checkout from Vanilla JS and doT.js to Svelte, improving
-                        developer productivity and speed of iteration.
-                    </li>
-                    <li>Developed consumer-facing payment flows on different versions of Razorpay Checkout.</li>
-                    <li>Resolved production issues, ensuring the team meets the required SLAs.</li>
-                    <li>Developed the <a href="https://github.com/razorpay/razorpay-flutter" target="_blank"
-                                         rel="noopener">Razorpay Flutter Plugin</a>.
-                    </li>
-                    <li>Onboarded new engineers and wrote internal developer documentation.</li>
-                </ul>
-            </article>
+          <h2>Work</h2>
+          <ul>
+            <li>
+              (Occassional) Engineering consultations for early-stage startups
+            </li>
+            <li>
+              Frontend Infra and Growth at
+              <a href="https://apollo.io" target="_blank" rel="noopener"
+                >Apollo.io</a
+              >
+            </li>
+            <li>
+              Product engineering at
+              <a
+                href="https://clipboardhealth.com"
+                target="_blank"
+                rel="noopener"
+                >Clipboard Health</a
+              >,
+              <a href="https://razorpay.com" target="_blank" rel="noopener"
+                >Razorpay</a
+              >
+            </li>
+          </ul>
         </section>
         <section class="projects">
-            <h2>Projects</h2>
-            <p>Coming soon!</p>
+          <h2>Projects</h2>
+          <p>
+            Look at my
+            <a
+              href="https://github.com/ChintanAcharya"
+              target="_blank"
+              rel="noopener"
+            >
+              GitHub</a
+            >
+            for my latest projects! Curated list below:
+          </p>
+          <ul>
+            <li>
+              <a
+                href="https://github.com/ChintanAcharya/dynamikey"
+                target="_blank"
+                rel="noopener"
+                >Dynamikey</a
+              >: A MIDI dynamics trainer for intermediate pianists. Built with
+              React, TypeScript, Web MIDI, Vexflow and MusicXML. I built this to
+              help myself and other musicians improve dynamic control on the
+              keyboard, which is a crucial aspect of musical expression.
+            </li>
+            <li>
+              <a
+                href="https://github.com/ChintanAcharya/self-hosted"
+                target="_blank"
+                rel="noopener"
+                >Self-hosted</a
+              >: Kubernetes + Terraform configuration for my self-hosted
+              applications. I built this to have a playground for testing out
+              different applications, and play Minecraft with friends on a
+              self-hosted server.
+            </li>
+          </ul>
         </section>
-        <section class="blog">
-            <h2>Blog</h2>
-            <p>Coming soon!</p>
+        <section class="life">
+          <h2>Life</h2>
+          <p>
+            I live in Bangalore, India. I'm into music, gaming, home audio,
+            travelling and science.
+          </p>
+          <p>
+            I like
+            <a
+              href="https://www.youtube.com/watch?v=63dbJQ4bXUA"
+              target="_blank"
+              rel="noopener"
+              >making music</a
+            >
+            and jamming with people. I play electric bass and piano.
+          </p>
         </section>
         <section class="contact">
-            <h2>Contact</h2>
-            <ul>
-                <li>Email: <a href="mailto:contact@chintanacharya.dev">contact@chintanacharya.dev</a></li>
-                <li>GitHub: <a href="https://github.com/ChintanAcharya" target="_blank"
-                               rel="noopener">ChintanAcharya</a>
-                </li>
-                <li><a href="https://www.linkedin.com/in/chintanacharya96/" target="_blank"
-                       rel="noopener">LinkedIn</a>
-                </li>
-            </ul>
+          <h2>Work with me</h2>
+          <p>
+            I'm looking out for work opportunities, particularly in product
+            engineering or frontend infrastructure. I value real-world impact,
+            technical excellence, craft and ownership.
+          </p>
+          <p>
+            Available for full-time roles, contract/consulting work, and
+            freelance projects.
+          </p>
+          <p>
+            Email me at
+            <a href="mailto:contact@chintanacharya.dev"
+              >contact@chintanacharya.dev</a
+            >.
+          </p>
+          <p>Résumé available upon request.</p>
         </section>
-    </div>
-</main>
-</body>
+      </div>
+    </main>
+    <footer>
+      Made with
+      <a href="https://www.11ty.dev/" target="_blank" rel="noopener">11ty</a>
+      and uses the
+      <a href="https://stephango.com/flexokit/" target="_blank" rel="noopener"
+        >Flexoki</a
+      >
+      color scheme ·
+      <a
+        href="https://github.com/ChintanAcharya/chintanacharya.github.io"
+        target="_blank"
+        rel="noopener"
+        >View Source</a
+      >
+    </footer>
+  </body>
 </html>
