@@ -26,6 +26,7 @@
       @media (prefers-color-scheme: dark) {
         :root {
           --color-text: #cecdc3;
+          --color-text-light: #878580;
           --color-highlight: #3aa99f;
           --color-highlight-light: #24837b;
           --color-bg: #1c1b1a;
@@ -35,6 +36,7 @@
       @media (prefers-color-scheme: light) {
         :root {
           --color-text: #100f0f;
+          --color-text-light: #6f6e69;
           --color-highlight: #24837b;
           --color-highlight-light: #5abdac;
           --color-bg: #f2f0e5;
@@ -63,8 +65,15 @@
         margin: 0 auto;
         padding: 1rem;
         width: 100%;
-        margin-top: 64px;
+        min-height: 100dvh;
+        padding-top: 64px;
         line-height: 1.5;
+        display: flex;
+        flex-direction: column;
+      }
+
+      main {
+        flex-grow: 1;
       }
 
       a:link,
@@ -108,6 +117,13 @@
         display: flex;
         flex-direction: row;
         gap: 1rem;
+      }
+
+      footer {
+        margin-top: 8px;
+        padding: 8px 0;
+        text-align: center;
+        color: var(--color-text-light);
       }
     </style>
   </head>
@@ -247,5 +263,20 @@
         </section>
       </div>
     </main>
+    <footer>
+      Made with
+      <a href="https://www.11ty.dev/" target="_blank" rel="noopener">11ty</a>
+      and uses the
+      <a href="https://stephango.com/flexokit/" target="_blank" rel="noopener"
+        >Flexoki</a
+      >
+      color scheme ·
+      <a
+        href="https://github.com/ChintanAcharya/chintanacharya.github.io"
+        target="_blank"
+        rel="noopener"
+        >View Source</a
+      >
+    </footer>
   </body>
 </html>
